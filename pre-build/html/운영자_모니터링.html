@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('include/head.html')
+<body>
+    <!--accNav-->
+    <div class="accNav">
+        <a href="#header">주요메뉴 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+        <a href="#footer">지역메뉴 바로가기</a>
+    </div>
+    <!--//accNav-->
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        @@include('include/header.html')
+        <!-- //header -->
+        <!-- lnb -->
+        @@include('include/lnb.html')
+        <!-- //lnb -->
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <!-- inner -->
+                <div class="inner">
+                    <!-- breadCrumb -->
+                    <div class="breadCrumb">
+                        <ul>
+                            <li>홈</li>
+                            <li>모니터링</li>
+                            <li>사용자 현황 통계</li>
+                        </ul>
+                    </div>
+                    <!-- //breadCrumb -->
+                    <h2 class="tit">사용자 현황 통계</h2>
+                    <!-- searchBox -->
+                    <div class="searchBox">
+                        <div class="row">
+                            <div class="searchGroup">
+                                <label for="s01">조회구분</label>
+                                <select style="width: 210px;" id="s01">
+                                    <option label="선택"></option>
+                                </select>
+                            </div>
+                            <div class="searchGroup">
+                                <label for="s02">기관구분</label>
+                                <select style="width: 210px;" id="s02">
+                                    <option label="선택"></option>
+                                </select>
+                            </div>
+                            <div class="searchGroup">
+                                <label for="i01">기준일</label>
+                                <input type="text" id="i01" class="datetimepicker" autocomplete="off"/>
+                            </div>
+                            <div class="searchGroup">
+                                <button type="button" class="btn bg-black lg">
+                                    <span>검색</span>
+                                    <i class="ico ico-notice-search wide"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //searchBox -->
+                    <div class="btnArea flexEnd">
+                        <button type="button" class="btn bg-green lg">
+                            <span>엑셀 다운로드</span>
+                        </button>
+                    </div>
+                    <!-- table -->
+                    <div class="table" style="margin-top: 20px;">
+                        <table>
+                            <colgroup>
+                                <col style="width: auto;"/>
+                                <col style="width: 110px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">기관 분류</th>
+                                    <th scope="col">계</th>
+                                    <th scope="col" class="txt-right">2021-03-25</th>
+                                    <th scope="col" class="txt-right">2021-03-26</th>
+                                    <th scope="col" class="txt-right">2021-03-27</th>
+                                    <th scope="col" class="txt-right">2021-03-28</th>
+                                    <th scope="col" class="txt-right">2021-03-29</th>
+                                    <th scope="col" class="txt-right">2021-03-30</th>
+                                    <th scope="col" class="txt-right sm">2021-03-31</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="txt-center">정보운영부</td>
+                                    <td class="txt-right">119</td>
+                                    <td class="txt-right">22</td>
+                                    <td class="txt-right">13</td>
+                                    <td class="txt-right">14</td>
+                                    <td class="txt-right">11</td>
+                                    <td class="txt-right">15</td>
+                                    <td class="txt-right">32</td>
+                                    <td class="txt-right sm">12</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">정보사업부</td>
+                                    <td class="txt-right">144</td>
+                                    <td class="txt-right">35</td>
+                                    <td class="txt-right">21</td>
+                                    <td class="txt-right">33</td>
+                                    <td class="txt-right">22</td>
+                                    <td class="txt-right">12</td>
+                                    <td class="txt-right">10</td>
+                                    <td class="txt-right sm">11</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">정보보안부</td>
+                                    <td class="txt-right">148</td>
+                                    <td class="txt-right">42</td>
+                                    <td class="txt-right">11</td>
+                                    <td class="txt-right">21</td>
+                                    <td class="txt-right">23</td>
+                                    <td class="txt-right">20</td>
+                                    <td class="txt-right">18</td>
+                                    <td class="txt-right sm">13</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">지적신사업부</td>
+                                    <td class="txt-right">195</td>
+                                    <td class="txt-right">48</td>
+                                    <td class="txt-right">14</td>
+                                    <td class="txt-right">42</td>
+                                    <td class="txt-right">33</td>
+                                    <td class="txt-right">32</td>
+                                    <td class="txt-right">11</td>
+                                    <td class="txt-right sm">15</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">기타</td>
+                                    <td class="txt-right">211</td>
+                                    <td class="txt-right">38</td>
+                                    <td class="txt-right">13</td>
+                                    <td class="txt-right">43</td>
+                                    <td class="txt-right">12</td>
+                                    <td class="txt-right">22</td>
+                                    <td class="txt-right">35</td>
+                                    <td class="txt-right sm">31</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <div class="graphArea"></div>
+
+                    <!-- table -->
+                    <div class="table cScroll overflow-xy bd" style="height: 300px;">
+                        <table style="width: 1500px;">
+                            <colgroup>
+                                <col style="width: auto;"/>
+                                <col style="width: 110px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                                <col style="width: 153px;"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">기관 분류</th>
+                                    <th scope="col">계</th>
+                                    <th scope="col" class="txt-right">2021-03-25</th>
+                                    <th scope="col" class="txt-right">2021-03-26</th>
+                                    <th scope="col" class="txt-right">2021-03-27</th>
+                                    <th scope="col" class="txt-right">2021-03-28</th>
+                                    <th scope="col" class="txt-right">2021-03-29</th>
+                                    <th scope="col" class="txt-right">2021-03-30</th>
+                                    <th scope="col" class="txt-right sm">2021-03-31</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="txt-center">정보운영부</td>
+                                    <td class="txt-right">119</td>
+                                    <td class="txt-right">22</td>
+                                    <td class="txt-right">13</td>
+                                    <td class="txt-right">14</td>
+                                    <td class="txt-right">11</td>
+                                    <td class="txt-right">15</td>
+                                    <td class="txt-right">32</td>
+                                    <td class="txt-right sm">12</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">정보사업부</td>
+                                    <td class="txt-right">144</td>
+                                    <td class="txt-right">35</td>
+                                    <td class="txt-right">21</td>
+                                    <td class="txt-right">33</td>
+                                    <td class="txt-right">22</td>
+                                    <td class="txt-right">12</td>
+                                    <td class="txt-right">10</td>
+                                    <td class="txt-right sm">11</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">정보보안부</td>
+                                    <td class="txt-right">148</td>
+                                    <td class="txt-right">42</td>
+                                    <td class="txt-right">11</td>
+                                    <td class="txt-right">21</td>
+                                    <td class="txt-right">23</td>
+                                    <td class="txt-right">20</td>
+                                    <td class="txt-right">18</td>
+                                    <td class="txt-right sm">13</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">지적신사업부</td>
+                                    <td class="txt-right">195</td>
+                                    <td class="txt-right">48</td>
+                                    <td class="txt-right">14</td>
+                                    <td class="txt-right">42</td>
+                                    <td class="txt-right">33</td>
+                                    <td class="txt-right">32</td>
+                                    <td class="txt-right">11</td>
+                                    <td class="txt-right sm">15</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">기타</td>
+                                    <td class="txt-right">211</td>
+                                    <td class="txt-right">38</td>
+                                    <td class="txt-right">13</td>
+                                    <td class="txt-right">43</td>
+                                    <td class="txt-right">12</td>
+                                    <td class="txt-right">22</td>
+                                    <td class="txt-right">35</td>
+                                    <td class="txt-right sm">31</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                </div>
+                <!-- //inner -->
+                <!-- footer -->
+                @@include('include/footer.html')
+                <!-- //footer -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

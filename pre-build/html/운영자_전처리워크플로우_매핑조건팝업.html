@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('include/head.html')
+<body>
+    <!--accNav-->
+    <div class="accNav">
+        <a href="#header">주요메뉴 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+        <a href="#footer">지역메뉴 바로가기</a>
+    </div>
+    <!--//accNav-->
+    <!-- wrap -->
+    <div id="wrap" class="workflow">
+        <!-- header -->
+        @@include('include/header_workflow.html')
+        <!-- //header -->
+        <!-- container -->
+        <div id="container">
+            <div class="funcList">
+                <div class="head">
+                    <strong class="tit">함수목록</strong>
+                </div>
+                <div class="cont">
+                    <div class="inner">
+                        <div class="row">
+                            <label>구분</label>
+                            <select>
+                                <option value="전체" selected>전체</option>
+                            </select>
+                        </div>
+                        <div class="table cScroll hover">
+                            <table>
+                                <caption>함수목록</caption>
+                                <colgroup>
+                                    <col style="width:50%"/>
+                                    <col style="width:auto"/>
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">함수명</th>
+                                    <th scope="col">함수</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>파라미터 체크</td>
+                                    <td>fn_all_test</td>
+                                </tr>
+                                <tr>
+                                    <td>이름 마스킹</td>
+                                    <td>fn_maskname</td>
+                                </tr>
+                                <tr>
+                                    <td>숫자 마스킹</td>
+                                    <td>fn_masknumber</td>
+                                </tr>
+                                <tr>
+                                    <td>주민등록번호 마스킹</td>
+                                    <td>fn_maskegn</td>
+                                </tr>
+                                <tr>
+                                    <td>전화번호 마스킹</td>
+                                    <td>fn_masktel</td>
+                                </tr>
+                                <tr>
+                                    <td>이메일 마스킹</td>
+                                    <td>fn_maskemail</td>
+                                </tr>
+                                <tr>
+                                    <td>IP주소 마스킹</td>
+                                    <td>fn_maskip</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>test</td>
+                                    <td>test</td>
+                                </tr>
+                                <tr>
+                                    <td>test</td>
+                                    <td>test</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>test</td>
+                                    <td>test</td>
+                                </tr>
+                                <tr>
+                                    <td>test</td>
+                                    <td>test</td>
+                                </tr>
+                                <tr>
+                                    <td>test</td>
+                                    <td>test</td>
+                                </tr>
+                                <tr>
+                                    <td>test</td>
+                                    <td>test</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div id="content">
+                <div class="inner">
+                    <div class="btnArea">
+                        <button type="button" class="btn bg-blue lg"><span>위치저장</span></button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+    </div>
+    <div class="popup" style="width:1206px;left:410px; top: 200px;">
+        <!-- popHead -->
+        <div class="popHead">
+            <p>매핑조건추가</p>
+            <button type="button" class="btnClose">
+                <span class="hidden">팝업창 닫기</span>
+            </button>
+        </div>
+        <!-- //popHead -->
+        <!-- popCont -->
+        <div class="popCont">
+            <div class="localArea">
+                <span>MST_ID_2035</span>
+                <span>전주시 유동인구_주간_201907</span>
+                <span>flow_wkdy_201907 A, tds_jeonju_fix_cctv B</span>
+            </div>
+            <div class="mappingArea">
+                <div class="left">
+                    <div class="inner">
+                        <strong class="tit">매핑조건</strong>
+                        <div class="radioGroup">
+                            <div class="radio type02">
+                                <input type="radio" name="rad" id="rad01" class="hidden" checked/>
+                                <label for="rad01">일반조건</label>
+                            </div>
+                            <div class="radio type02">
+                                <input type="radio" name="rad" id="rad02" class="hidden"/>
+                                <label for="rad02">공간함수</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label>함수선택</label>
+                            <select style="width:180px;">
+                                <option value="ST_Intersect" selected>ST_Intersect</option>
+                            </select>
+                        </div>
+                        <div class="table lineTb">
+                            <table>
+                                <caption>매핑조건</caption>
+                                <colgroup>
+                                    <col style="width:25%"/>
+                                    <col style="width:25%"/>
+                                    <col style="width:25%"/>
+                                    <col style="width:auto"/>
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col"><label>관계연산자</label></th>
+                                    <th scope="col"><label>컬럼</label></th>
+                                    <th scope="col"><label>연산자</label></th>
+                                    <th scope="col"><label>컬럼</label></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="txt-center">
+                                        <select style="width:150px;">
+                                            <option value="AND" selected>AND</option>
+                                        </select>
+                                    </td>
+                                    <td class="txt-center">
+                                        <select style="width:150px;">
+                                            <option value="B. geom(공간정보)" selected>B. geom(공간정보)</option>
+                                        </select>
+                                    </td>
+                                    <td class="txt-center">
+                                        <select style="width:150px;">
+                                            <option value="=" selected>=</option>
+                                        </select>
+                                    </td>
+                                    <td class="txt-center">
+                                        <select style="width:150px;">
+                                            <option value="B. geom(공간정보)" selected>B. geom(공간정보)</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="question">[추가]클릭 시 작성한 매핑조건이 추가되고 팝업창을 닫고 [저장]을 하셔야 반영이 됩니다.</p>
+                        <div class="btnArea flexEnd" style="margin-top:0;">
+                            <button type="button" class="btn bg-blue lg"><span>추가</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="inner">
+                        <strong class="tit question">매핑조건 Help</strong>
+                        <section>
+                            <strong class="titSec">기본연산자</strong>
+                            <ul class="calc">
+                                <li>
+                                    <span>=</span>
+                                    <p>기본 연산자의 경우 비교대상이 되는 컬럼의 데이터타입을 고려하여 값을 입력합니다.</p>
+                                </li>
+                                <li>
+                                    <span>&gt;</span>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <span>&lt;</span>
+                                    <p>숫자타입 : <span>123</span></p>
+                                </li>
+                                <li>
+                                    <span>&gt;=</span>
+                                    <p>문자타입 : <span>'전주시'</span></p>
+                                </li>
+                                <li>
+                                    <span>&lt;=</span>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <span>&lt;&gt;</span>
+                                    <p>컬럼간 비교시에도 같은 데이터타입을 비교하도록 합니다.</p>
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <strong class="titSec">기타연산자</strong>
+                            <ul class="calc">
+                                <li>
+                                    <span>IN</span>
+                                    <p><span>(1,2,3,4)</span> or <span>('건물','토지')</span></p>
+                                </li>
+                                <li>
+                                    <span>LIKE</span>
+                                    <p><span>('35%')</span></p>
+                                </li>
+                                <li>
+                                    <span>IS NULL</span>
+                                    <p><span class="null"></span></p>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <p>기타 연산자의 경우 예시를 참고하여 값을 입력합니다.</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //popCont -->
+    </div>
+
+    <!-- //wrap -->
+</body>
+</html>

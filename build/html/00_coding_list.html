@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* reset */
+        html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, section, summary {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        img {
+            border: none;
+            vertical-align: top;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        button {
+            display: inline-block;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        input, button, a, select, option {
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        input[type="checkbox"] {
+            border: none !important;
+        }
+
+        /* for lte IE10 */
+        input[type="radio"] {
+            border: none !important;
+        }
+
+        /* for lte IE10 */
+        caption {
+            text-align: left;
+            margin-bottom: 7px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* common */
+        body, html, pre {
+            font-family: "맑은 고딕", "Malgun Gothic", Dotum, sans-serif;
+            font-size: 14px;
+            color: #333;
+            letter-spacing: -0.045em !important;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .clearFix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .hidden {
+            margin: 0;
+            padding: 0;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #wrap {
+            padding-bottom: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px 0 10px;
+        }
+
+        table {
+            width: 98%;
+            margin: 20px auto 0;
+            border-top: 2px solid #787d81;
+        }
+
+        th {
+            background: #777f88;
+            color: #fff;
+        }
+
+        th, td {
+            height: 30px;
+            border-bottom: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th:first-child, td:first-child {
+            border-left: 0;
+        }
+    </style>
+    <title>LX국토정보플랫폼 코딩리스트</title>
+</head>
+<body>
+    <div id="wrap">
+        <h1>LX국토정보플랫폼 코딩리스트</h1>
+        <table>
+            <caption>로그인/공통</caption>
+            <colgroup>
+                <col style="width:10%"/>
+                <col style="width:10%"/>
+                <col style="width:10%"/>
+                <col style="width:15%"/>
+                <col style="width:10%"/>
+                <col style="width:10%"/>
+                <col style="width:auto;"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th scope="col">1depth</th>
+                <th scope="col">2depth</th>
+                <th scope="col">3depth</th>
+                <th scope="col">파일명</th>
+                <th scope="col">업데이트일자</th>
+                <th scope="col">작업자</th>
+                <th scope="col">비고</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td title="1depth">로딩</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="로딩.html" target="_blank">로딩.html</a></td>
+                <td title="업데이트일자">2021-11-03</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">레이아웃</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="layout.html" target="_blank">layout.html</a></td>
+                <td title="업데이트일자">2021-11-03</td>
+                <td title="작업자">서규영</td>
+                <td title="비고">1012 관리자 디자인 수정사항</td>
+            </tr>
+            <tr>
+                <td title="1depth">로그인</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="로그인.html" target="_blank">로그인.html</a></td>
+                <td title="업데이트일자">2021-06-03</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">공통</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자관리_공통.html" target="_blank">운영자관리 공통.html</a></td>
+                <td title="업데이트일자">2021-06-03</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">공통02</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자관리_공통02.html" target="_blank">운영자관리 공통02.html</a></td>
+                <td title="업데이트일자">2021-06-03</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">공통03</td>
+                <td title="2depth">조회 데이터 없음 테이블 추가</td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자관리_공통03.html" target="_blank">운영자관리 공통03.html</a></td>
+                <td title="업데이트일자">2021-06-24</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">공통 상세</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자관리_공통_상세.html" target="_blank">운영자관리_공통_상세.html</a></td>
+                <td title="업데이트일자">2021-06-08</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">데이터관리 공통</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_공통_데이터관리.html" target="_blank">운영자_공통_데이터관리.html</a></td>
+                <td title="업데이트일자">2021-06-11</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">데이터관리 공통02</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_공통_데이터관리2.html" target="_blank">운영자_공통_데이터관리2.html</a></td>
+                <td title="업데이트일자">2021-06-11</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">사용자관리 공통</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_공통_사용자관리.html" target="_blank">운영자_공통_사용자관리.html</a></td>
+                <td title="업데이트일자">2021-06-10</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">팝업모음</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="popup.html" target="_blank">popup.html</a></td>
+                <td title="업데이트일자">2021-11-03</td>
+                <td title="작업자">서규영</td>
+                <td title="비고">팝업추가</td>
+            </tr>
+            <tr>
+                <td title="1depth">팝업모음</td>
+                <td title="2depth">수집 데이터관리 팝업</td>
+                <td title="3depth">신규등록 버튼 클릭 시 팝업창 뜨기</td>
+                <td title="파일명"><a href="수집데이터관리_팝업.html" target="_blank">수집데이터관리_팝업.html</a></td>
+                <td title="업데이트일자">2021-07-19</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">통합 모니터링 팝업</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_통합모니터링_팝업.html" target="_blank">운영자_통합모니터링_팝업.html</a></td>
+                <td title="업데이트일자">2021-08-12</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">얼럿모음</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="alert.html" target="_blank">alert.html</a></td>
+                <td title="업데이트일자">2021-08-12</td>
+                <td title="작업자">오인섭</td>
+                <td title="비고"></td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <caption>운영관리 페이지</caption>
+            <colgroup>
+                <col style="width:10%"/>
+                <col style="width:10%"/>
+                <col style="width:10%"/>
+                <col style="width:15%"/>
+                <col style="width:10%"/>
+                <col style="width:10%"/>
+                <col style="width:auto;"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th scope="col">1depth</th>
+                <th scope="col">2depth</th>
+                <th scope="col">3depth</th>
+                <th scope="col">파일명</th>
+                <th scope="col">업데이트일자</th>
+                <th scope="col">작업자</th>
+                <th scope="col">비고</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td title="1depth">데이터관리</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_데이터관리.html" target="_blank">운영자_데이터관리.html</a></td>
+                <td title="업데이트일자">2021-08-12</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">데이터관리</td>
+                <td title="2depth">대시보드</td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_데이터관리_대시보드.html" target="_blank">운영자_데이터관리_대시보드.html</a></td>
+                <td title="업데이트일자">2021-08-12</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">데이터관리02</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_데이터관리02.html" target="_blank">운영자_데이터관리02.html</a></td>
+                <td title="업데이트일자">2021-06-16</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">데이터관리03</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_데이터관리03.html" target="_blank">운영자_데이터관리03.html</a></td>
+                <td title="업데이트일자">2021-06-16</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">데이터관리04</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_데이터관리04.html" target="_blank">운영자_데이터관리04.html</a></td>
+                <td title="업데이트일자">2021-08-20</td>
+                <td title="작업자">서규영</td>
+                <td title="비고">검색 아이콘 클릭 시 팝업 뜨기</td>
+            </tr>
+            <tr>
+                <td title="1depth">데이터관리05</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_데이터관리05.html" target="_blank">운영자_데이터관리05.html</a></td>
+                <td title="업데이트일자">2021-08-20</td>
+                <td title="작업자">서규영</td>
+                <td title="비고">조회버튼 클릭 시 팝업 뜨기</td>
+            </tr>
+            <tr>
+                <td title="1depth">사용자관리 상세</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_사용자관리_상세.html" target="_blank">운영자_사용자관리_상세.html</a></td>
+                <td title="업데이트일자">2021-07-05</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">운영자 대시보드</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_대시보드.html" target="_blank">운영자_대시보드.html</a></td>
+                <td title="업데이트일자">2021-06-11</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">운영자 모니터링</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_모니터링.html" target="_blank">운영자_모니터링.html</a></td>
+                <td title="업데이트일자">2021-06-11</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">운영자 통합모니터링</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_통합모니터링.html" target="_blank">운영자_통합모니터링.html</a></td>
+                <td title="업데이트일자">2021-08-13</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">운영자 공간데이터 그룹 상세</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_공간데이터그룹_상세.html" target="_blank">운영자_공간데이터그룹_상세.html</a></td>
+                <td title="업데이트일자">2021-07-07</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">운영자 공지사항관리 상세정보</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_공지사항관리_상세정보.html" target="_blank">운영자_공지사항관리_상세정보.html</a></td>
+                <td title="업데이트일자">2021-08-17</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">운영자 질의응답 상세정보</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_질의응답_상세정보.html" target="_blank">운영자_질의응답_상세정보.html</a></td>
+                <td title="업데이트일자">2021-08-17</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">운영자 사용자현황통계</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_사용자현황통계.html" target="_blank">운영자_사용자현황통계.html</a></td>
+                <td title="업데이트일자">2021-07-07</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">운영자 사용자포럼</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_사용자포럼.html" target="_blank">운영자_사용자포럼.html</a></td>
+                <td title="업데이트일자">2021-07-07</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">베이스맵관리 상세정보</td>
+                <td title="2depth"></td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="베이스맵관리_상세정보.html" target="_blank">베이스맵관리_상세정보.html</a></td>
+                <td title="업데이트일자">2021-08-31</td>
+                <td title="작업자">서규영</td>
+                <td title="비고"></td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <caption>전처리 워크플로우</caption>
+            <colgroup>
+                <col style="width:10%"/>
+                <col style="width:10%"/>
+                <col style="width:10%"/>
+                <col style="width:15%"/>
+                <col style="width:10%"/>
+                <col style="width:10%"/>
+                <col style="width:auto;"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th scope="col">1depth</th>
+                <th scope="col">2depth</th>
+                <th scope="col">3depth</th>
+                <th scope="col">파일명</th>
+                <th scope="col">업데이트일자</th>
+                <th scope="col">작업자</th>
+                <th scope="col">비고</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td title="1depth">전처리워크플로우</td>
+                <td title="2depth">건물정보</td>
+                <td title="3depth"></td>
+                <td title="파일명"><a href="운영자_전처리워크플로우.html" target="_blank">운영자_전처리워크플로우.html</a></td>
+                <td title="업데이트일자">2021-09-14</td>
+                <td title="작업자">오인섭</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">전처리워크플로우</td>
+                <td title="2depth">매핑조건팝업</td>
+                <td title="3depth">일반조건</td>
+                <td title="파일명"><a href="운영자_전처리워크플로우_매핑조건팝업.html" target="_blank">운영자_전처리워크플로우_매핑조건팝업.html</a></td>
+                <td title="업데이트일자">2021-09-14</td>
+                <td title="작업자">오인섭</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="1depth">전처리워크플로우</td>
+                <td title="2depth">매핑조건팝업</td>
+                <td title="3depth">공간함수</td>
+                <td title="파일명"><a href="운영자_전처리워크플로우_매핑조건팝업_공간함수.html" target="_blank">운영자_전처리워크플로우_매핑조건팝업_공간함수.html</a></td>
+                <td title="업데이트일자">2021-09-14</td>
+                <td title="작업자">오인섭</td>
+                <td title="비고"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+<script>
+</script>
+</body>
+</html>

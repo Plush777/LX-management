@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('include/head.html')
+<body>
+    <!--accNav-->
+    <div class="accNav">
+        <a href="#header">주요메뉴 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+        <a href="#footer">지역메뉴 바로가기</a>
+    </div>
+    <!--//accNav-->
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        @@include('include/header.html')
+        <!-- //header -->
+        <!-- lnb -->
+        @@include('include/lnb.html')
+        <!-- //lnb -->
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <div class="inner">
+                <!-- breadCrumb -->
+                <div class="breadCrumb">
+                    <ul>
+                        <li>홈</li>
+                        <li>포털 관리</li>
+                        <li>게시판 관리</li>
+                        <li>공지사항 관리</li>
+                    </ul>
+                </div>
+                <!-- //breadCrumb -->
+                <h2 class="tit">공지사항 관리</h2>
+                <!-- searchBox -->
+                <div class="searchBox">
+                    <!-- row -->
+                    <div class="row">
+                        <!-- 11-03 : 라벨에 안에 span 추가 -->
+                        <div class="searchGroup">
+                            <label for="s01">
+                                <span>검색조건 1</span>
+                            </label>
+                            <select class="default" id="s01">
+                                <option label="선택" selected></option>
+                            </select>
+                        </div>
+                        <div class="searchGroup">
+                            <label for="s02">
+                                <span>검색조건 2</span>
+                            </label>
+                            <select class="default" id="s02">
+                                <option label="선택" selected></option>
+                            </select>
+                        </div>
+                        <div class="searchGroup">
+                            <label for="s03">
+                                <span>검색조건 3</span>
+                            </label>
+                            <select class="default" id="s03">
+                                <option label="선택" selected></option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- //row -->
+                    <!-- row -->
+                    <div class="row">
+                        <!-- dateGroup -->
+                        <div class="dateGroup">
+                            <label for="i01">
+                                <span>등록일시</span>
+                            </label>
+                            <div class="checkbox">
+                                <input type="checkbox" id="chk14"/>
+                                <label for="chk14"></label>
+                            </div>
+                            <input type="text" id="i01" class="datetimepicker" autocomplete="off">
+                            <!-- 11-03 : dash 클래스 추가 -->
+                            <span class="dash">-</span>
+                            <label for="i02"></label>
+                            <input type="text" id="i02" class="datetimepicker" autocomplete="off">
+                            
+                            <!-- dateList -->
+                            <div class="dateList">
+                                <ul>
+                                    <li class="active">1일</li>
+                                    <li>3일</li>
+                                    <li>7일</li>
+                                    <li>1개월</li>
+                                    <li>3개월</li>
+                                </ul>
+                            </div>
+                            <!-- //dateList -->
+                        </div>
+                        <!-- //dateGroup -->
+                        <div class="searchGroup">
+                            <label for="s04">
+                                <span>검색어</span>
+                            </label>
+                            <select class="default" id="s04">
+                                <option label="선택" selected></option>
+                            </select>
+                            <div class="inputBox">
+                                <input type="text" id="i03" style="width: 220px;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //row -->
+                    <div class="row flexEnd">
+                        <div class="searchGroup">
+                            <button type="button" class="btn bg-black lg">
+                                <span>검색</span>
+                                <i class="ico ico-notice-search wide"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //searchBox -->
+                <!-- btnArea -->
+                <div class="btnArea flexEnd">
+                    <button type="button" class="btn bg-grey lg rightAuto">
+                        <span>삭제</span>
+                    </button>
+                    <button type="button" class="btn bg-blue lg">
+                        <span>등록</span>
+                    </button>
+                    <button type="button" class="btn bg-green lg">
+                        <span>엑셀 다운로드</span>
+                    </button>
+                </div>
+                <!-- //btnArea -->
+                <div class="resultArea">
+                    <dl>
+                        <dt>전체<em class="blue">21</em>건</dt>
+                        <dd>승인<em class="blue">3</em>건</dd>
+                        <dd>활성화<em class="blue">2</em>건</dd>
+                    </dl>
+                </div>
+                <!-- table -->
+                <div class="table effect">
+                    <table>
+                        <caption>운영관리 테이블</caption>
+                        <colgroup>
+                            <col style="width: 50px;">
+                            <col style="width: 100px;">
+                            <col style="width: 130px;">
+                            <col style="width: auto;">
+                            <col style="width: 150px;">
+                            <col style="width: 150px;">
+                            <col style="width: 140px;">
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <div class="checkbox ac">
+                                        <input type="checkbox" id="chk01">
+                                        <label for="chk01"></label>
+                                    </div>
+                                </th>
+                                <th scope="col">번호</th>
+                                <th scope="col">분야</th>
+                                <th scope="col">
+                                    <a href="#">제목</a>
+                                </th>
+                                <th scope="col">구분</th>
+                                <th scope="col">SNS여부</th>
+                                <th scope="col">등록일</th>
+                                <th scope="col">새창버튼</th>
+                                <th scope="col">아이콘</th>
+                                <th scope="col">텍스트버튼</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="pin">
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk02">
+                                        <label for="chk02"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="flex fc">
+                                        <i class="ico ico-pin02"></i>
+                                    </p>
+                                </td>
+                                <td class="txt-center">분야1</td>
+                                <td>
+                                    <p class="flex ac">
+                                        <i class="ico ico-notice mr"></i>
+                                        <a href="#">사이트 정기 점검 (2021-02-20 ~ 2021-02-22)</a>
+                                    </p>
+                                </td>
+                                <td class="txt-center">활성화</td>
+                                <td class="txt-center">발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="pin">
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk03">
+                                        <label for="chk03"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="flex fc">
+                                        <i class="ico ico-pin02"></i>
+                                    </p>
+                                </td>
+                                <td class="txt-center">분야1</td>
+                                <td>
+                                    <p class="flex ac">
+                                        <i class="ico ico-notice mr"></i>
+                                        <a href="#">사이트 정기 점검 (2021-02-20 ~ 2021-02-22)</a>
+                                    </p>
+                                </td>
+                                <td class="txt-center">활성화</td>
+                                <td class="txt-center">발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk04">
+                                        <label for="chk04"></label>
+                                    </div>
+                                </td>
+                                <td class="txt-center">12</td>
+                                <td class="txt-center">분야1</td>
+                                <td>
+                                    <p class="flex ac">
+                                        <a href="#">마이페이지 버그 수정</a>
+                                        <i class="ico ico-new ml"></i>
+                                    </p>
+                                </td>
+                                <td class="red txt-center">빨강색</td>
+                                <td class="txt-center">미발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td>
+                                    <button type="button" class="btn bg-white">
+                                        <span class="t-grey">미리보기</span>
+                                        <i class="ico ico-newWin ml"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn bg-white p0">
+                                        <i class="ico ico-more"></i>
+                                    </button>
+                                </td>
+                                <td class="red">
+                                    <button type="button" class="btn bg-white wide p0">
+                                        <span class="t-red">red</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk05">
+                                        <label for="chk05"></label>
+                                    </div>
+                                </td>
+                                <td class="txt-center">11</td>
+                                <td class="txt-center">분야1</td>
+                                <td>
+                                    <p class="flex ac">
+                                        <a href="#">LX데이터 재구축</a>
+                                        <i class="ico ico-lock ml"></i>
+                                    </p>
+                                </td>
+                                <td class="blue txt-center">파랑색</td>
+                                <td class="txt-center">미발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn bg-white p0">
+                                        <i class="ico ico-delete"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn bg-white wide p0">
+                                        <span class="t-blue">blue</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk06">
+                                        <label for="chk06"></label>
+                                    </div>
+                                </td>
+                                <td class="txt-center">10</td>
+                                <td class="txt-center">분야1</td>
+                                <td>
+                                    <p class="flex ac">
+                                        <a href="#">GPKI 등록 안내</a>
+                                        <i class="ico ico-lock ml"></i>
+                                    </p>
+                                </td>
+                                <td class="green txt-center">초록색</td>
+                                <td class="txt-center">미발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn bg-white p0">
+                                        <i class="ico ico-close"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn bg-white wide green-2 p0">
+                                        <span class="t-green">green</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk07">
+                                        <label for="chk07"></label>
+                                    </div>
+                                </td>
+                                <td class="txt-center">9</td>
+                                <td class="txt-center">분야1</td>
+                                <td class="txt-left">
+                                    <a href="#"> 맵 갤러리 지도 출처 등록 의무화로 인한 변화 안내</a>
+                                </td>
+                                <td class="grey txt-center">회색</td>
+                                <td class="txt-center">미발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn bg-white p0">
+                                        <i class="ico ico-btnSearch"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn bg-white wide p0">
+                                        <span class="t-grey">grey</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk08">
+                                        <label for="chk08"></label>
+                                    </div>
+                                </td>
+                                <td class="txt-center">8</td>
+                                <td class="txt-center">분야1</td>
+                                <td class="txt-left">
+                                    <a href="#">마이페이지 주요기능 변경 안내</a>
+                                </td>
+                                <td class="black txt-center">검은색</td>
+                                <td class="txt-center">미발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn bg-white p0">
+                                        <i class="ico ico-stop"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn bg-white wide p0">
+                                        <span class="t-black">black</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk09">
+                                        <label for="chk09"></label>
+                                    </div>
+                                </td>
+                                <td class="txt-center">7</td>
+                                <td class="txt-center">분야1</td>
+                                <td class="txt-left">
+                                    <a href="#">FAQ 운영 규정 안내</a>
+                                </td>
+                                <td class="txt-center">비활성화</td>
+                                <td class="txt-center">미발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn bg-white p0">
+                                        <i class="ico ico-pause"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn bg-white wide p0">
+                                        <span class="t-grey">승인</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk10">
+                                        <label for="chk10"></label>
+                                    </div>
+                                </td>
+                                <td class="txt-center">6</td>
+                                <td class="txt-center">분야1</td>
+                                <td class="txt-left">
+                                    <a href="#">QnA 운영 규정 안내</a>
+                                </td>
+                                <td class="txt-center">비활성화</td>
+                                <td class="txt-center">미발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn bg-white p0">
+                                        <i class="ico ico-start"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn bg-white wide p0">
+                                        <span class="t-grey">반려</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk11">
+                                        <label for="chk11"></label>
+                                    </div>
+                                </td>
+                                <td class="txt-center">5</td>
+                                <td class="txt-center">분야1</td>
+                                <td>
+                                    <p class="flex ac">
+                                        <i class="ico ico-notice mr"></i>
+                                        <a href="#">LX국토정보플랫폼 소개 안내</a>
+                                    </p>
+                                </td>
+                                <td class="txt-center">비활성화</td>
+                                <td class="txt-center">미발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn bg-white p0">
+                                        <i class="ico ico-pause-disabled"></i>
+                                    </button>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk12">
+                                        <label for="chk12"></label>
+                                    </div>
+                                </td>
+                                <td class="txt-center">4</td>
+                                <td class="txt-center">분야1</td>
+                                <td class="txt-left">
+                                    <a href="#">QnA 운영 규정 안내</a>
+                                </td>
+                                <td class="txt-center">비활성화</td>
+                                <td class="txt-center">미발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn bg-white p0 btnMore">
+                                        <i class="ico ico-more02"></i>
+                                    </button>
+                                    <!-- innerMenu -->
+                                    <div class="innerMenu">
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btnReplyEdit">
+                                                    <span>수정</span>
+                                                    <i class="ico ico-edit ml"></i>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btnReplyRemove">
+                                                    <span>삭제</span>
+                                                    <i class="ico ico-delete-grey ml"></i>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- //innerMenu -->
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk13">
+                                        <label for="chk13"></label>
+                                    </div>
+                                </td>
+                                <td class="txt-center">3</td>
+                                <td class="txt-center">분야1</td>
+                                <td>
+                                    <p class="flex ac">
+                                        <i class="ico ico-notice mr"></i>
+                                        <a href="#">LX국토정보플랫폼 소개 안내</a>
+                                    </p>
+                                </td>
+                                <td class="txt-center">비활성화</td>
+                                <td class="txt-center">미발송</td>
+                                <td class="txt-center">2021-02-28</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <!-- pagination -->
+                @@include('include/pagination.html')
+                <!-- //pagination -->
+                <!-- footer -->
+                @@include('include/footer.html')
+                <!-- //footer -->
+                </div>
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

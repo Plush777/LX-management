@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('include/head.html')
+<body>
+    <!--accNav-->
+    <div class="accNav">
+        <a href="#header">주요메뉴 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+        <a href="#footer">지역메뉴 바로가기</a>
+    </div>
+    <!--//accNav-->
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        @@include('include/header.html')
+        <!-- //header -->
+        <!-- lnb -->
+        @@include('include/lnb.html')
+        <!-- //lnb -->
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <!-- inner -->
+                <div class="inner">
+                    <!-- breadCrumb -->
+                    <div class="breadCrumb">
+                        <ul>
+                            <li>홈</li>
+                            <li>포털 관리</li>
+                            <li>게시판 관리</li>
+                            <li>공지사항 관리</li>
+                        </ul>
+                    </div>
+                    <!-- //breadCrumb -->
+                    <h2 class="tit">질의응답 관리 - 상세정보</h2>
+                    <!-- boardArea -->
+                    <div class="boardArea">
+                        <div class="titArea">
+                            <strong>API 버그 신고합니다.</strong>
+                        </div>
+                        <!-- statBoard -->
+                        <div class="statBoard">
+
+                            <!-- row -->
+                            <div class="row col3">
+                                <div class="info">
+                                    <label>작성자</label>
+                                    <p>관리자</p>
+                                </div>
+                                <div class="info">
+                                    <label>등록 일시</label>
+                                    <p>2021-02-28</p>
+                                </div>
+                                <div class="info">
+                                    <label>분류</label>
+                                    <p>API</p>
+                                </div>
+                            </div>
+                            <!-- //row -->
+
+                            <!-- row -->
+                            <div class="row col3">
+                                <div class="info">
+                                    <label>공개 여부</label>
+                                    <p>공개</p>
+                                </div>
+                                <div class="info">
+                                    <label>첨부파일</label>
+                                    <p>
+                                        <a href="#" title="질의응답.jpg" class="file ico-jpg blue">질의응답.jpg</a>
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <label>조회수</label>
+                                    <p>7</p>
+                                </div>
+                            </div>
+                            <!-- //row -->
+
+                            <!-- row -->
+                            <div class="row col2">
+                                <div class="info">
+                                    <label>답변 상태</label>
+                                    <p class="blue">등록</p>
+                                    <p>미등록</p>
+                                </div>
+                                <div class="info">
+                                    <label>답변 상태</label>
+                                    <p class="blue">등록</p>
+                                    <p>미등록</p>
+                                </div>
+                            </div>
+                            <!-- //row -->
+                        </div>
+                        <!-- //statBoard -->
+                            <!--qna-->
+                            <div class="qna">
+                                <div class="titQna">
+                                    <i class="ico ico-q mr"></i><strong>질문</strong>
+                                </div>
+                                <div class="desc">
+                                    안녕하세요 개발자입니다.<br/>
+                                    이번에 토이 프로젝트로 LX플랫폼 API를 사용하려고 하는데, 이상하게 다른 API의 결과값이 반환됩니다.<br/>
+                                    자세한 API와 결과값은 이미지에 첨부합니다.
+                                </div>
+                            </div>
+                            <!--//qna-->
+                            <!--qna-->
+                            <div class="qna">
+                                <div class="titQna answer">
+                                    <i class="ico ico-a mr"></i><strong>답변</strong>
+                                </div>
+                                <div class="desc">
+                                    안녕하세요 springboot 님.<br/>
+                                    말씀하신 대로 해당 API에 버그가 있었고, 해당 버그는 현시간 부로 정상적인 결과값이 반환될 겁니다.<br/>
+                                    불편을 드려서 죄송합니다.
+                                </div>
+                            </div>
+                            <!--//qna-->
+                            <!-- btnArea -->
+                            <div class="btnArea">
+                                <button type="button" class="btn bg-grey lg">
+                                    <span>목록</span>
+                                </button>
+                                <button type="button" class="btn bg-grey lg">
+                                    <span>삭제</span>
+                                </button>
+                                <button type="button" class="btn bg-blue lg leftAuto">
+                                    <span>수정</span>
+                                </button>
+                            </div>
+                            <!-- //btnArea -->
+                        </div>
+                        <!-- //boardArea -->
+                        <!--replyBox-->
+                <div class="replyBox">
+                    <div class="flex">
+                        <textarea placeholder="댓글을 작성하시면 됩니다."></textarea>
+                        <div class="btnGroup">
+                            <button type="button" class="btn sm"><span>등록</span></button>
+                        </div>
+                    </div>
+                    <p class="wordLength"><span>0</span> / 1000</p>
+                </div>
+                <!--//replyBox-->
+                <!--replyArea-->
+                <div class="replyArea">
+                    <!--resultArea-->
+                    <div class="resultArea">
+                        <dl>
+                            <dt class="hidden">result</dt>
+                            <dd class="col1">댓글<em class="blue">4</em>건</dd>
+                        </dl>
+                    </div>
+                    <!--//resultArea-->
+                    <!--reply-->
+                    <div class="reply">
+                        <div class="row">
+                            <strong class="name">안민정</strong>
+                            <p class="date">2020-07-01 20:07:10</p>
+                        </div>
+                        <p class="desc">댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.<br/>
+                            댓글입니다.댓글입니다.댓글입니다.댓글입니다.</p>
+                        <!--replyBox-->
+                        <div class="replyBox">
+                            <div class="flex">
+                                <textarea placeholder="댓글을 작성하시면 됩니다."></textarea>
+                                <div class="btnGroup">
+                                    <button type="button" class="btn btnReplySubmit sm"><span>등록</span></button>
+                                    <button type="button" class="btn btnReplyCancel sm"><span>취소</span></button>
+                                </div>
+                            </div>
+                            <p class="wordLength"><span>0</span> / 1000</p>
+                        </div>
+                        <!--//replyBox-->
+                        <div class="more">
+                            <button type="button" class="btnMore"><span class="hidden">메뉴</span></button>
+                            <div class="innerMenu">
+                                <ul>
+                                    <li>
+                                        <button type="button" class="btnReplyEdit"><span>수정</span><i class="ico ico-edit rt"></i></button>
+
+                                    <li>
+                                        <button type="button" class="btnReplyRemove"><span>삭제</span><i class="ico ico-remove rt"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//reply-->
+                    <!--reply-->
+                    <div class="reply">
+                        <div class="row">
+                            <strong class="name">springboot</strong>
+                            <p class="date">2020-07-01 20:07:10</p>
+                        </div>
+                        <p class="desc">댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.<br/>
+                            댓글입니다.댓글입니다.댓글입니다.댓글입니다.</p>
+                        <!--replyBox-->
+                        <div class="replyBox">
+                            <div class="flex">
+                                <textarea placeholder="댓글을 작성하시면 됩니다."></textarea>
+                                <div class="btnGroup">
+                                    <button type="button" class="btn btnReplySubmit sm"><span>등록</span></button>
+                                    <button type="button" class="btn btnReplyCancel sm"><span>취소</span></button>
+                                </div>
+                            </div>
+                            <p class="wordLength"><span>0</span> / 1000</p>
+                        </div>
+                        <!--//replyBox-->
+                        <div class="more">
+                            <button type="button" class="btnMore"><span class="hidden">메뉴</span></button>
+                            <div class="innerMenu">
+                                <ul>
+                                    <li>
+                                        <button type="button" class="btnReplyEdit"><span>수정</span><i class="ico ico-edit rt"></i></button>
+
+                                    <li>
+                                        <button type="button" class="btnReplyRemove"><span>삭제</span><i class="ico ico-remove rt"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//reply-->
+                    <!--reply-->
+                    <div class="reply">
+                        <div class="row">
+                            <strong class="name">홍길동</strong>
+                            <p class="date">2020-07-01 20:07:10</p>
+                        </div>
+                        <p class="desc">댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.<br/>
+                            댓글입니다.댓글입니다.댓글입니다.댓글입니다.</p>
+                        <!--replyBox-->
+                        <div class="replyBox">
+                            <div class="flex">
+                                <textarea placeholder="댓글을 작성하시면 됩니다."></textarea>
+                                <div class="btnGroup">
+                                    <button type="button" class="btn btnReplySubmit sm"><span>등록</span></button>
+                                    <button type="button" class="btn btnReplyCancel sm"><span>취소</span></button>
+                                </div>
+                            </div>
+                            <p class="wordLength"><span>0</span> / 1000</p>
+                        </div>
+                        <!--//replyBox-->
+                        <div class="more">
+                            <button type="button" class="btnMore"><span class="hidden">메뉴</span></button>
+                            <div class="innerMenu">
+                                <ul>
+                                    <li>
+                                        <button type="button" class="btnReplyEdit"><span>수정</span><i class="ico ico-edit rt"></i></button>
+
+                                    <li>
+                                        <button type="button" class="btnReplyRemove"><span>삭제</span><i class="ico ico-remove rt"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//reply-->
+                    <!--reply-->
+                    <div class="reply">
+                        <div class="row">
+                            <strong class="name">goodoning</strong>
+                            <p class="date">2020-07-01 20:07:10</p>
+                        </div>
+                        <p class="desc">댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.댓글입니다.<br/>
+                            댓글입니다.댓글입니다.댓글입니다.댓글입니다.</p>
+                        <!--replyBox-->
+                        <div class="replyBox">
+                            <div class="flex">
+                                <textarea placeholder="댓글을 작성하시면 됩니다."></textarea>
+                                <div class="btnGroup">
+                                    <button type="button" class="btn btnReplySubmit sm"><span>등록</span></button>
+                                    <button type="button" class="btn btnReplyCancel sm"><span>취소</span></button>
+                                </div>
+                            </div>
+                            <p class="wordLength"><span>0</span> / 1000</p>
+                        </div>
+                        <!--//replyBox-->
+                        <div class="more">
+                            <button type="button" class="btnMore"><span class="hidden">메뉴</span></button>
+                            <div class="innerMenu">
+                                <ul>
+                                    <li>
+                                        <button type="button" class="btnReplyEdit"><span>수정</span><i class="ico ico-edit rt"></i></button>
+
+                                    <li>
+                                        <button type="button" class="btnReplyRemove"><span>삭제</span><i class="ico ico-remove rt"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//reply-->
+                </div>
+                <!--//replyArea-->
+                    </div>
+                    <!-- //inner -->
+                 <!-- footer -->
+                 @@include('include/footer.html')
+                 <!-- //footer -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

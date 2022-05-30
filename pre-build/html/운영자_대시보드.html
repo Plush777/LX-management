@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('include/head.html')
+<body>
+    <!--accNav-->
+    <div class="accNav">
+        <a href="#header">주요메뉴 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+        <a href="#footer">지역메뉴 바로가기</a>
+    </div>
+    <!--//accNav-->
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        @@include('include/header.html')
+        <!-- //header -->
+        <!-- lnb -->
+        @@include('include/lnb.html')
+        <!-- //lnb -->
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <div class="inner">
+                    <!-- breadCrumb -->
+                    <div class="breadCrumb">
+                        <ul>
+                            <li>홈</li>
+                            <li>대시보드</li>
+                        </ul>
+                    </div>
+                    <!-- //breadCrumb -->
+                    <h2 class="tit">대시보드</h2>
+                    <!-- dsahBoardList -->
+                    <div class="dashBoardList">
+                        <!-- row -->
+                        <div class="row">
+                            <!-- boxArea -->
+                            <div class="boxArea">
+                                <div class="titArea">
+                                    <strong>포털 현황 - 사용자</strong>
+                                </div>
+                                <div class="box">
+                                    <div class="innerBox">
+                                        <div class="result">
+                                            <strong>전체 사용자수</strong>
+                                            <i class="ico ico-user center"></i>
+                                            <strong>350 명</strong>
+                                        </div>
+                                        <div class="status">
+                                            <div class="inner">
+                                                <strong>소속별 사용자수</strong>
+                                                <div class="graphArea circle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //boxArea -->
+                            <!-- //boxArea -->
+                            <div class="boxArea">
+                                <div class="titArea">
+                                    <strong>승인요청 사용자</strong>
+                                </div>
+                                <div class="box">
+                                    <div class="innerBox">
+                                        <!-- table -->
+                                        <div class="table cScroll overflow-y" style="height:210px;">
+                                            <table>
+                                                <caption>승인요청 사용자 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width: 130px;"/>
+                                                    <col style="width: 130px;"/>
+                                                    <col style="width: 130px;"/>
+                                                    <col style="width: auto;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">소속 구분</th>
+                                                        <th scope="col">사용자 ID</th>
+                                                        <th scope="col">사용자명</th>
+                                                        <th scope="col">등록일시</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="txt-center">
+                                                        <td>정보운영처</td>
+                                                        <td>user6</td>
+                                                        <td>사용자6</td>
+                                                        <td>2021-07-31 15:15:02</td>
+                                                    </tr>
+                                                    <tr class="txt-center">
+                                                        <td>정보운영처</td>
+                                                        <td>user5</td>
+                                                        <td>사용자5</td>
+                                                        <td>2021-07-31 15:15:02</td>
+                                                    </tr>
+                                                    <tr class="txt-center">
+                                                        <td>정보운영처</td>
+                                                        <td>user4</td>
+                                                        <td>사용자4</td>
+                                                        <td>2021-07-31 15:15:02</td>
+                                                    </tr>
+                                                    <tr class="txt-center">
+                                                        <td>정보사업부</td>
+                                                        <td>user3</td>
+                                                        <td>사용자3</td>
+                                                        <td>2021-07-31 15:15:02</td>
+                                                    </tr>
+                                                    <tr class="txt-center">
+                                                        <td>정보사업부</td>
+                                                        <td>user2</td>
+                                                        <td>사용자2</td>
+                                                        <td>2021-07-31 15:15:02</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //boxArea -->
+                        </div>
+                        <!-- //row -->
+                        <!-- row -->
+                        <div class="row">
+                            <!-- boxArea -->
+                            <div class="boxArea">
+                                <div class="titArea">
+                                    <strong>포털 현황 - 게시판</strong>
+                                </div>
+                                <div class="box">
+                                    <div class="innerBox">
+                                        <div class="result">
+                                            <strong>총 등록 게시물</strong>
+                                            <i class="ico ico-enroll center"></i>
+                                            <strong>350 명</strong>
+                                        </div>
+                                        <div class="status">
+                                            <div class="inner">
+                                                <strong>게시판별 등록건수</strong>
+                                                <div class="graphArea"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //boxArea -->
+                            <!-- boxArea -->
+                            <div class="boxArea">
+                                <div class="titArea">
+                                    <strong>사용자 요청</strong>
+                                    <strong>질의응답</strong>
+                                </div>
+                                <div class="box">
+                                    <div class="innerBox">
+                                        <!-- table -->
+                                        <div class="table cScroll overflow-y" style="height:230px;">
+                                            <table>
+                                                <caption>사용자요청-질의응답 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width: 160px;"/>
+                                                    <col style="width: 160px;"/>
+                                                    <col style="width: auto;"/>
+                                                    <col style="width: 160px;"/>
+                                                    <col style="width: 160px;"/>
+                                                    <col style="width: 160px;"/>
+                                                    <col style="width: 160px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">요청 구분</th>
+                                                        <th scope="col">분류</th>
+                                                        <th scope="col">제목</th>
+                                                        <th scope="col">첨부</th>
+                                                        <th scope="col">작성자</th>
+                                                        <th scope="col">등록일시</th>
+                                                        <th scope="col">답변상태</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="txt-center">
+                                                        <td>오류 신고</td>
+                                                        <td>저작도구</td>
+                                                        <td>제목입니다.</td>
+                                                        <td>
+                                                            <a href="#" title="첨부파일">
+                                                                <i class="ico ico-file center"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>사용자2</td>
+                                                        <td>2021-07-31</td>
+                                                        <td class="blue">등록</td>
+                                                    </tr>
+                                                    <tr class="txt-center">
+                                                        <td>사용자 제안</td>
+                                                        <td>API</td>
+                                                        <td>API 속도관련</td>
+                                                        <td>
+                                                            <a href="#" title="첨부파일">
+                                                                <i class="ico ico-file center"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>사용자1</td>
+                                                        <td>2021-07-31</td>
+                                                        <td>미등록</td>
+                                                    </tr>
+                                                    <tr class="txt-center">
+                                                        <td>사용자 제안</td>
+                                                        <td>API</td>
+                                                        <td>API 개선사항</td>
+                                                        <td>
+                                                            <a href="#" title="첨부파일">
+                                                                <i class="ico ico-file center"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>사용자3</td>
+                                                        <td>2021-07-31</td>
+                                                        <td class="blue">등록</td>
+                                                    </tr>
+                                                    <tr class="txt-center">
+                                                        <td>사용자 제안</td>
+                                                        <td>API</td>
+                                                        <td>API 기능추가</td>
+                                                        <td class="txt-center">
+                                                            <a href="#" class="clip" title="다운로드">
+                                                                <span class="hidden">다운로드</span>
+                                                            </a>
+                                                        </td>
+                                                        <td>사용자0</td>
+                                                        <td>2021-07-31</td>
+                                                        <td class="blue">등록</td>
+                                                    </tr>
+                                                    <tr class="txt-center">
+                                                        <td>오류 신고</td>
+                                                        <td>API</td>
+                                                        <td>API 버그신고</td>
+                                                        <td> 
+                                                            <a href="#" class="clip" title="다운로드">
+                                                                <span class="hidden">다운로드</span>
+                                                            </a>
+                                                        </td>
+                                                        <td>사용자4</td>
+                                                        <td>2021-07-31</td>
+                                                        <td>미등록</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    <!-- //table -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //boxArea -->
+                        </div>
+                        <!-- //row -->
+                        <!-- row -->
+                        <div class="row">
+                            <!-- boxArea -->
+                            <div class="boxArea">
+                                <div class="titArea">
+                                    <strong>포털 현황 - 조회</strong>
+                                </div>
+                                <div class="box">
+                                    <div class="innerBox">
+                                        <div class="result">
+                                            <strong>오늘 조회수</strong>
+                                            <i class="ico ico-inquiry center"></i>
+                                            <strong>350 명</strong>
+                                        </div>
+                                        <div class="status">
+                                            <div class="inner">
+                                                <strong>게시판별 등록건수</strong>
+                                                <div class="graphArea"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //boxArea -->
+                            <!-- boxArea -->
+                            <div class="boxArea">
+                                <div class="titArea">
+                                    <strong>공지사항</strong>
+                                </div>
+                                <div class="box">
+                                    <div class="innerBox">
+                                         <!-- table -->
+                                         <div class="table cScroll overflow-y"  style="height:230px;">
+                                            <table>
+                                                <caption>승인요청 사용자 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width: auto;"/>
+                                                    <col style="width: 70px;"/>
+                                                    <col style="width: 70px;"/>
+                                                    <col style="width: 70px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">제목</th>
+                                                        <th scope="col">첨부</th>
+                                                        <th scope="col">작성자</th>
+                                                        <th scope="col">등록일시</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="pin txt-center">
+                                                        <td class="txt-left">
+                                                            [<span class="red">중요</span>] 사이트 정기점검
+                                                        </td>
+                                                        <td></td>
+                                                        <td>관리자</td>
+                                                        <td>2021-07-31</td>
+                                                    </tr>
+                                                    <tr class="pin txt-center">
+                                                        <td class="txt-left"> 
+                                                            [<span class="red">중요</span>] 사이트 정기점검
+                                                        </td>
+                                                        <td>-</td>
+                                                        <td>관리자</td>
+                                                        <td>2021-07-31</td>
+                                                    </tr>
+                                                    <tr class="txt-center">
+                                                        <td class="txt-left">마이페이지 버그 수정</td>
+                                                        <td>-</td>
+                                                        <td>관리자</td>
+                                                        <td>2021-07-31</td>
+                                                    </tr>
+                                                    <tr class="txt-center">
+                                                        <td class="txt-left">LX데이터 재구축</td>
+                                                        <td>-</td>
+                                                        <td>관리자</td>
+                                                        <td>2021-07-31</td>
+                                                    </tr>
+                                                    <tr class="txt-center">
+                                                        <td class="txt-left">GPKJ 등록 안내</td>
+                                                        <td>-</td>
+                                                        <td>관리자</td>
+                                                        <td>2021-07-31</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //boxArea -->
+                        </div>
+                        <!-- //row -->
+                    </div>
+                    <!-- //dashBoardList -->
+                <!-- footer -->
+                @@include('include/footer.html')
+                <!-- //footer -->
+                </div>
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('include/head.html')
+<body>
+    <!--accNav-->
+    <div class="accNav">
+        <a href="#header">주요메뉴 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+        <a href="#footer">지역메뉴 바로가기</a>
+    </div>
+    <!--//accNav-->
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        @@include('include/header.html')
+        <!-- //header -->
+        <!-- lnb -->
+        @@include('include/lnb.html')
+        <!-- //lnb -->
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <div class="inner">
+                <!-- breadCrumb -->
+                <div class="breadCrumb">
+                    <ul>
+                        <li>홈</li>
+                        <li>포털 관리</li>
+                        <li>게시판 관리</li>
+                        <li>공지사항 관리</li>
+                    </ul>
+                </div>
+                <!-- //breadCrumb -->
+                <h2 class="tit">공지사항 관리</h2>
+                <!-- searchBox -->
+                <div class="searchBox">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="searchGroup">
+                            <label for="s01">
+                                <span>검색조건 1</span>
+                            </label>
+                            <select class="default" id="s01">
+                                <option label="선택" selected></option>
+                            </select>
+                        </div>
+                        <div class="searchGroup">
+                            <label for="s02">
+                                <span>검색조건 2</span>
+                            </label>
+                            <select class="default" id="s02">
+                                <option label="선택" selected></option>
+                            </select>
+                        </div>
+                        <div class="searchGroup">
+                            <label for="s03">
+                                <span>검색조건 3</span>
+                            </label>
+                            <select class="default" id="s03">
+                                <option label="선택" selected></option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- //row -->
+                    <!-- row -->
+                    <div class="row">
+                        <!-- dateGroup -->
+                        <div class="dateGroup">
+                            <label for="i01">
+                                <span>등록일시</span>
+                            </label>
+                            <div class="checkbox">
+                                <input type="checkbox" id="chk14"/>
+                                <label for="chk14"></label>
+                            </div>
+                            <input type="text" id="i01" class="datetimepicker" autocomplete="off"/>
+                            <span class="dash">-</span>
+                            <label for="i02"></label>
+                            <input type="text" id="i02" class="datetimepicker" autocomplete="off"/>
+                            <!-- dateList -->
+                            <div class="dateList">
+                                <ul>
+                                    <li class="active">1일</li>
+                                    <li>3일</li>
+                                    <li>7일</li>
+                                    <li>1개월</li>
+                                    <li>3개월</li>
+                                </ul>
+                            </div>
+                            <!-- //dateList -->
+                        </div>
+                        <!-- //dateGroup -->
+                        <div class="searchGroup">
+                            <label for="s04">
+                                <span>검색어</span>
+                            </label>
+                            <select class="default" id="s04">
+                                <option label="선택" selected></option>
+                            </select>
+                            <div class="inputBox">
+                                <input type="text" id="i03" style="width: 220px;">
+                                <label for="i03"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //row -->
+                    <div class="row flexEnd">
+                        <button type="button" class="btn bg-black lg">
+                            <span>검색</span>
+                            <i class="ico ico-notice-search ml"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- //searchBox -->
+                <!-- btnArea -->
+                <div class="btnArea flexEnd">
+                    <button type="button" class="btn bg-grey lg rightAuto">
+                        <span>삭제</span>
+                    </button>
+                    <button type="button" class="btn bg-blue lg">
+                        <span>등록</span>
+                    </button>
+                    <button type="button" class="btn bg-green lg">
+                        <span>엑셀 다운로드</span>
+                    </button>
+                </div>
+                <!-- //btnArea -->
+                <div class="resultArea">
+                    <dl>
+                        <dt class="hidden">result</dt>
+                        <dd class="col1">전체<em class="blue">0</em>건</dd>
+                    </dl>
+                </div>
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <caption>운영관리 테이블</caption>
+                        <colgroup>
+                            <col style="width: 50px;">
+                            <col style="width: 100px;">
+                            <col style="width: 130px;">
+                            <col style="width: auto;">
+                            <col style="width: 150px;">
+                            <col style="width: 150px;">
+                            <col style="width: 140px;">
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <div class="checkbox ac">
+                                        <input type="checkbox" id="chk01">
+                                        <label for="chk01"></label>
+                                    </div>
+                                </th>
+                                <th scope="col">번호</th>
+                                <th scope="col">분야</th>
+                                <th scope="col">
+                                    <a href="#">제목</a>
+                                </th>
+                                <th scope="col">구분</th>
+                                <th scope="col">SNS여부</th>
+                                <th scope="col">등록일</th>
+                                <th scope="col">새창버튼</th>
+                                <th scope="col">아이콘</th>
+                                <th scope="col">텍스트버튼</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="10" class="txt-center">조회 데이터가 없습니다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <!-- footer -->
+                @@include('include/footer.html')
+                <!-- //footer -->
+                </div>
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

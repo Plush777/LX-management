@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('include/head.html')
+<body>
+    <!--accNav-->
+    <div class="accNav">
+        <a href="#header">주요메뉴 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+        <a href="#footer">지역메뉴 바로가기</a>
+    </div>
+    <!--//accNav-->
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        @@include('include/header.html')
+        <!-- //header -->
+        <!-- lnb -->
+        @@include('include/lnb.html')
+        <!-- //lnb -->
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <!-- inner -->
+                <div class="inner">
+                    <!-- breadCrumb -->
+                    <div class="breadCrumb">
+                        <ul>
+                            <li>홈</li>
+                            <li>포털 관리</li>
+                            <li>게시판 관리</li>
+                            <li>공지사항 관리</li>
+                        </ul>
+                    </div>
+                    <!-- //breadCrumb -->
+                    <h2 class="tit">전처리 작업 관리</h2>
+                    <!-- searchBox -->
+                    <div class="searchBox">
+                        <!-- row -->
+                        <div class="row">
+                            <!-- searchGroup -->
+                            <div class="searchGroup">
+                                <label for="s01">작업구분</label>
+                                <select id="s01" style="width:210px;">
+                                    <option label="전체"></option>
+                                </select>
+                            </div>
+                            <!-- //searchGroup -->
+                            <!-- searchGroup -->
+                            <div class="searchGroup">
+                                <input type="text" id="i01" style="width: 1014px;"/>
+                                <label for="i01"></label>
+                            </div>
+                            <!-- //searchGroup -->
+                            <!-- searchGroup -->
+                            <button type="button" class="btn bg-black">
+                                <i class="ico ico-notice-search"></i>
+                            </button>
+                            <!-- //searchGroup -->
+                        </div>
+                        <!-- //row -->
+                    </div>
+                    <!-- //searchBox -->
+                    <!-- resultArea -->
+                    <div class="resultArea">
+                        <dl>
+                            <dt class="hidden">result</dt>
+                            <dd class="col1">전체<em class="blue">6</em>건</dd>
+                        </dl>
+                    </div>
+                    <!-- //resultArea -->
+                    <!-- table -->
+                    <div class="table effect">
+                        <table>
+                            <colgroup>
+                                <col style="width: 70px;">
+                                <col style="width: 60px;">
+                                <col style="width: 340px;">
+                                <col style="width: 340px;">
+                                <col style="width: 340px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01">
+                                            <label for="chk01"></label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">작업구분</th>
+                                    <th scope="col">정제함수</th>
+                                    <th scope="col">정제함수명</th>
+                                    <th scope="col">상세정보</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="pin">
+                                    <td class="txt-center">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk02">
+                                            <label for="chk02"></label>
+                                        </div>
+                                    </td>
+                                    <td class="txt-center">1</td>
+                                    <td class="txt-center">데이터마스킹</td>
+                                    <td class="txt-center">fn_maskname</td>
+                                    <td class="txt-center">이름 마스킹</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white lg inquire">
+                                            <span class="t-black">조회</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk03">
+                                            <label for="chk03"></label>
+                                        </div>
+                                    </td>
+                                    <td class="txt-center">2</td>
+                                    <td class="txt-center">데이터마스킹</td>
+                                    <td class="txt-center">fn_masknumber</td>
+                                    <td class="txt-center">숫자 마스킹</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white lg">
+                                            <span class="t-black">조회</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk04">
+                                            <label for="chk04"></label>
+                                        </div>
+                                    </td>
+                                    <td class="txt-center">3</td>
+                                    <td class="txt-center">데이터마스킹</td>
+                                    <td class="txt-center">fn_maskregn</td>
+                                    <td class="txt-center">주민등록번호 마스킹</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white lg">
+                                            <span class="t-black">조회</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk05">
+                                            <label for="chk05"></label>
+                                        </div>
+                                    </td>
+                                    <td class="txt-center">4</td>
+                                    <td class="txt-center">데이터마스킹</td>
+                                    <td class="txt-center">fn_masktel</td>
+                                    <td class="txt-center">전화번호 마스킹</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white lg">
+                                            <span class="t-black">조회</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk06">
+                                            <label for="chk06"></label>
+                                        </div>
+                                    </td>
+                                    <td class="txt-center">5</td>
+                                    <td class="txt-center">데이터마스킹</td>
+                                    <td class="txt-center">fn_maskemail</td>
+                                    <td class="txt-center">이메일 마스킹</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white lg">
+                                            <span class="t-black">조회</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk07">
+                                            <label for="chk07"></label>
+                                        </div>
+                                    </td>
+                                    <td class="txt-center">6</td>
+                                    <td class="txt-center">데이터마스킹</td>
+                                    <td class="txt-center">fn_maskip</td>
+                                    <td class="txt-center">IP주소 마스킹</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white lg">
+                                            <span class="t-black">조회</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <div class="btnArea between">
+                        <button type="button" class="btn bg-grey lg">삭제</button>
+                        <button type="button" class="btn bg-blue lg">전처리작업 등록</button>
+                    </div>
+                </div>
+                <!-- //inner -->
+                <!-- footer -->
+                @@include('include/footer.html')
+                <!-- //footer -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+        <!-- popup -->
+        <div class="popup" style="display: none;">
+            <!-- popHead -->
+            <div class="popHead">
+                <p>fn_maskname 이름마스킹</p>
+                <button type="button" class="btnClose">
+                    <span class="hidden">팝업창 닫기</span>
+                </button>
+            </div>
+            <!-- //popHead -->
+            <!-- popCont -->
+            <div class="popCont">
+                <div class="resultArea">
+                    <dl>
+                        <dt class="hidden">result</dt>
+                        <dd class="col1">전체<em class="blue">1</em>건</dd>
+                    </dl>
+                </div>
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 150px;">
+                            <col style="width: 190px;">
+                            <col style="width: 190px;">
+                            <col style="width: 190px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk08">
+                                        <label for="chk08"></label>
+                                    </div>
+                                </th>
+                                <th scope="col">파라미터ID</th>
+                                <th scope="col">파라미터유형</th>
+                                <th scope="col">표시순번</th>
+                                <th scope="col">상세정보</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk09">
+                                        <label for="chk09"></label>
+                                    </div>
+                                </td>
+                                <td class="txt-center">TEST</td>
+                                <td class="txt-center">대상컬럼</td>
+                                <td class="txt-center">1</td>
+                                <td>
+                                    <button type="button" class="btn bg-white lg">
+                                        <span class="t-black">조회</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <div class="btnArea between">
+                    <button type="button" class="btn bg-grey lg">삭제</button>
+                    <button type="button" class="btn bg-blue lg">파라미터 등록</button>
+                </div>
+            </div>
+            <!-- //popCont -->
+        </div>
+        <!-- //popup -->
+        <div id="dimmed" style="display: none;"></div>
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

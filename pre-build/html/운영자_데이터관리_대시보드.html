@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('include/head.html')
+<body>
+    <!--accNav-->
+    <div class="accNav">
+        <a href="#header">주요메뉴 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+        <a href="#footer">지역메뉴 바로가기</a>
+    </div>
+    <!--//accNav-->
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        @@include('include/header.html')
+        <!-- //header -->
+        <!-- lnb -->
+        @@include('include/lnb.html')
+        <!-- //lnb -->
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <div class="inner">
+                    <!-- breadCrumb -->
+                    <div class="breadCrumb">
+                        <ul>
+                            <li>홈</li>
+                            <li>대시보드</li>
+                        </ul>
+                    </div>
+                    <!-- //breadCrumb -->
+                    <h2 class="tit">대시보드</h2>
+                    <!-- dsahBoardList -->
+                    <div class="dashBoardList data">
+                        <!-- row -->
+                        <div class="row">
+                            <!-- boxArea -->
+                            <div class="boxArea">
+                                <div class="titArea">
+                                   <strong>데이터 보유현황</strong>
+                                </div>
+                                <div class="box">
+                                    <div class="innerBox">
+                                        <div class="total">
+                                            <div class="sub">
+                                                <strong>전체 데이터</strong>
+                                            </div>
+                                            <div class="dashTit">
+                                                총<strong style="margin-left: 10px;">178</strong>건
+                                            </div>
+                                        </div>
+                                        <div class="graphArea circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //boxArea -->
+                            <!-- //boxArea -->
+                            <div class="boxArea">
+                                <div class="titArea">
+                                    <strong>분류체계별 보유현황</strong>
+                                </div>
+                                <div class="box">
+                                    <div class="innerBox">
+                                        <div style="height:238px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //boxArea -->
+                        </div>
+                        <!-- //row -->
+                        <!-- row -->
+                        <div class="row">
+                            <!-- boxArea -->
+                            <div class="boxArea">
+                                <div class="titArea">
+                                    <strong>연계/배포 현황</strong>
+                                </div>
+                                <!-- box -->
+                                <div class="box">
+                                    <!-- innerBox -->
+                                    <div class="innerBox">
+                                        <!-- total -->
+                                        <div class="total">
+                                            <div class="sub">
+                                                <strong>연계</strong>
+                                            </div>
+                                            <div class="dashTit">
+                                                <strong>7</strong>시스템<strong>120</strong>건
+                                            </div>
+                                        </div>
+                                        <!-- //total -->
+                                        <div class="graphArea"></div>
+                                    </div>
+                                    <!-- //innerBox -->
+                                </div>
+                                <!-- //box -->
+                            </div>
+                            <!-- //boxArea -->
+                            <!-- boxArea -->
+                            <div class="boxArea">
+                                <div class="titArea">
+                                    
+                                </div>
+                                <div class="box">
+                                    <div class="innerBox">
+                                        <div class="total">
+                                            <div class="sub">
+                                                <strong>배포</strong>
+                                            </div>
+                                            <div class="dashTit">
+                                                <strong>5</strong>시스템<strong>30</strong>건
+                                            </div>
+                                            <div class="graphArea"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //boxArea -->
+                        </div>
+                        <!-- //row -->
+                        <!-- row -->
+                        <div class="row">
+                            <!-- boxArea -->
+                            <div class="boxArea" style="width:100%;">
+                                <!-- box -->
+                                <div class="box">
+                                    <!-- innerBox -->
+                                    <div class="innerBox">
+                                        <!-- total -->
+                                        <div class="total">
+                                            <div class="sub">
+                                                <strong>다운로드 (신청/승인)</strong>
+                                            </div>
+                                            <div class="dashTit">
+                                                <strong>500</strong>건/<strong>350</strong>건
+                                            </div>
+                                            <div class="graphArea"></div>
+                                        </div>
+                                        <!-- //total -->
+                                    </div>
+                                    <!-- //innerBox -->
+                                </div>
+                                <!-- //box -->
+                            </div>
+                            <!-- //boxArea -->
+                        </div>
+                        <!-- //row -->
+                    </div>
+                    <!-- //dashBoardList -->
+                    <!-- footer -->
+                    @@include('include/footer.html')
+                    <!-- //footer -->
+                </div>
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

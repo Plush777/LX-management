@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('include/head.html')
+<body>
+    <!--accNav-->
+    <div class="accNav">
+        <a href="#header">주요메뉴 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+        <a href="#footer">지역메뉴 바로가기</a>
+    </div>
+    <!--//accNav-->
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        @@include('include/header.html')
+        <!-- //header -->
+        <!-- lnb -->
+        @@include('include/lnb.html')
+        <!-- //lnb -->
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <!-- inner -->
+                <div class="inner">
+                    <!-- breadCrumb -->
+                    <div class="breadCrumb">
+                        <ul>
+                            <li>홈</li>
+                            <li>포털 관리</li>
+                            <li>게시판 관리</li>
+                            <li>공지사항 관리</li>
+                        </ul>
+                    </div>
+                    <!-- //breadCrumb -->
+                    <h2 class="tit">공간데이터 그룹정보</h2>
+                    <div class="titArea">
+                        <strong>공간데이터 그룹정보</strong>
+                    </div>
+                    <!-- table -->
+                    <div class="table row lg">
+                        <table>
+                            <caption>공간데이터 그룹정보 테이블</caption>
+                            <colgroup>
+                                <col style="width: 200px;"/>
+                                <col style="width: 500px;"/>
+                                <col style="width: 200px;"/>
+                                <col style="width: auto;"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">등록일자</th>
+                                    <td>2020-07-15</td>
+                                    <th scope="row">사용여부</th>
+                                    <td>사용</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">등록자</th>
+                                    <td colspan="3">admin</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="i01">그룹명</label>
+                                    </th>
+                                    <td colspan="3" class="sm">
+                                        <input type="text" id="i01" style="width: 400px;"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="t01">설명</label>
+                                    </th>
+                                    <td colspan="3" class="sm">
+                                        <textarea id="t01" class="overflow-y" style="width:100%; height: 64px;"></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <div class="titArea flex sb ac">
+                        <strong>공간데이터 목록</strong>
+                        <button type="button" class="btn bd-orange">
+                            <span class="t-orange">신청자 추가</span>
+                            <i class="ico ico-btnApply ml"></i>
+                        </button>
+                    </div>
+                    <div class="resultArea">
+                        <dl>
+                            <dt class="hidden">result</dt>
+                            <dd class="col1">전체<em class="blue">10</em>건</dd>
+                        </dl>
+                    </div>
+                    <!-- table -->
+                    <div class="table">
+                        <table>
+                            <caption>공간데이터 목록 테이블</caption>
+                            <colgroup>
+                                <col style="width: 115px;"/>
+                                <col style="width: 250px;"/>
+                                <col style="width: 320px;"/>
+                                <col style="width: 335px;"/>
+                                <col style="width: 165px;"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">순번</th>
+                                    <th scope="col">유형</th>
+                                    <th scope="col">레이어명</th>
+                                    <th scope="col">레이어설명</th>
+                                    <th scope="col">삭제</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="txt-center">10</td>
+                                    <td class="txt-center">건물 &middot; 시설</td>
+                                    <td>건물동정보</td>
+                                    <td>건물동정보 건물 레이어</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white p0">
+                                            <i class="ico ico-delete"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">9</td>
+                                    <td class="txt-center">건물 &middot; 시설</td>
+                                    <td>건물층정보</td>
+                                    <td>건물층정보 건물 레이어</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white p0">
+                                            <i class="ico ico-delete"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">8</td>
+                                    <td class="txt-center">건물 &middot; 시설</td>
+                                    <td>건물총괄정보</td>
+                                    <td>건물총괄정보 레이어</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white p0">
+                                            <i class="ico ico-delete"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">7</td>
+                                    <td class="txt-center">부동산</td>
+                                    <td>건물도면속성정보</td>
+                                    <td>건물도면속성정보 레이어</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white p0">
+                                            <i class="ico ico-delete"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">6</td>
+                                    <td class="txt-center">토지</td>
+                                    <td>지분정보</td>
+                                    <td>지분정보 레이어</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white p0">
+                                            <i class="ico ico-delete"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">5</td>
+                                    <td class="txt-center">건물 &middot; 시설</td>
+                                    <td>도로명주소 건물</td>
+                                    <td>도로명주소 건물 레이어</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white p0">
+                                            <i class="ico ico-delete"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">4</td>
+                                    <td class="txt-center">용도지역지구</td>
+                                    <td>(연속주체)_관광진흥/관광지</td>
+                                    <td>관광지 레이어</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white p0">
+                                            <i class="ico ico-delete"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">3</td>
+                                    <td class="txt-center">용도지역지구</td>
+                                    <td>(연속주체)_자연공원/용도지구</td>
+                                    <td>자연공원 레이어</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white p0">
+                                            <i class="ico ico-delete"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">2</td>
+                                    <td class="txt-center">용도지역지구</td>
+                                    <td>(연속주체)_온천/온천지구</td>
+                                    <td>온천 레이어</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white p0">
+                                            <i class="ico ico-delete"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">1</td>
+                                    <td class="txt-center">용도지역지구</td>
+                                    <td>(연속주체)_교통/주차장</td>
+                                    <td>주차장 레이어</td>
+                                    <td>
+                                        <button type="button" class="btn bg-white p0">
+                                            <i class="ico ico-delete"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <div class="btnArea">
+                        <button type="button" class="btn bg-grey lg">목록</button>
+                        <button type="button" class="btn bg-grey lg">삭제</button>
+                        <button type="button" class="btn bg-blue lg leftAuto">수정</button>
+                    </div>
+                </div>
+                <!-- //inner -->
+                 <!-- footer -->
+                 @@include('include/footer.html')
+                 <!-- //footer -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

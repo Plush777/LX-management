@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../lib/datetimepicker-master/build/jquery.datetimepicker.min.css" type="text/css">
+    <script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+    <script src="../lib/datetimepicker-master/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="../js/ui.js"></script>
+    <title>LX국토정보플랫폼 운영관리</title>
+</head>
+<body>
+    <!--accNav-->
+    <div class="accNav">
+        <a href="#header">주요메뉴 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+        <a href="#footer">지역메뉴 바로가기</a>
+    </div>
+    <!--//accNav-->
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+    <!-- inner -->
+    <div class="inner">
+        <h1 class="logo">
+            <a href="#" title="LX국토정보플랫폼 운영">
+                <span class="hidden">LX국토정보플랫폼 운영</span>
+            </a>
+        </h1>
+        <!-- tabContWrap -->
+        <div class="tabContWrap type01 chImg">
+            <!-- tabNav -->
+            <div class="tabNav">
+                <ul class="tabList">
+                    <li class="active">
+                        <a href="#">운영 관리</a>
+                    </li>
+                    <li>
+                        <a href="#">데이터 관리</a>
+                    </li>
+                    <li>
+                        <a href="#">인프라 관리</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //tabNav -->
+
+            <!-- 운영관리 탭 -->
+            <!-- tabCont -->
+            <div class="tabCont pos-r active">
+                <!-- gnb -->
+                <div class="gnb">
+                    <ul>
+                        <li class="active">
+                            <a href="#">포털관리</a>
+                        </li>
+                        <li>
+                            <a href="#">지도관리</a>
+                        </li>
+                        <li>
+                            <a href="#">사용자관리</a>
+                        </li>
+                        <li>
+                            <a href="#">모니터링</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //gnb -->
+                <!-- rightMenu -->
+                <div class="rightMenu">
+                    <!-- user -->
+                    <div class="user">
+                        <a href="#" title="사용자 포털 바로가기">사용자 포털 바로가기</a>
+                        <div class="info">
+                            <span>최고관리자 <strong>송은희</strong>님</span>
+                        </div>
+                        <div class="util">
+                            <button type="button">
+                                <i class="ico ico-search"></i>
+                            </button>
+                            <button type="button" class="btnLogout">
+                                <!-- ico-logout : 비로그인 아이콘 -->
+                                <!-- ico-login : 로그인 아이콘 -->
+                                <i class="ico ico-login"></i> 
+                            </button>
+                            <button type="button" class="btnMore">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //user -->
+                    <!-- selectArea -->
+                    <div class="selectArea right">
+                        <select style="width: 100px;">
+                            <option label="선택" selected></option>
+                            <option label="선택 1"></option>
+                            <option label="선택 2"></option>
+                            <option label="선택 3"></option>
+                        </select>
+                        <select style="width: 100px;">
+                            <option label="선택" selected></option>
+                            <option label="선택 1"></option>
+                            <option label="선택 2"></option>
+                            <option label="선택 3"></option>
+                        </select>
+                    </div>
+                    <!-- //selectArea -->
+                </div>
+                <!-- //rightMenu -->
+            </div>
+            <!-- //tabCont -->
+
+            <!-- 데이터 관리 탭 -->
+            <!-- tabCont -->
+            <div class="tabCont pos-r">
+                <!-- gnb -->
+                <div class="gnb">
+                    <ul>
+                        <li class="active">
+                            <a href="#">데이터관리</a>
+                        </li>
+                        <li>
+                            <a href="#">작업관리</a>
+                        </li>
+                        <li>
+                            <a href="#">모니터링</a>
+                        </li>
+                        <li>
+                            <a href="#">기준관리</a>
+                        </li>
+                        <li>
+                            <a href="#">시스템관리</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //gnb -->
+                <!-- rightMenu -->
+                <div class="rightMenu">
+                    <!-- user -->
+                    <div class="user">
+                        <a href="#" title="사용자 포털 바로가기">사용자 포털 바로가기</a>
+                        <div class="info">
+                            <span>최고관리자 <strong>송은희</strong>님</span>
+                        </div>
+                        <div class="util">
+                            <button type="button">
+                                <i class="ico ico-search"></i>
+                            </button>
+                            <button type="button" class="btnLogout">
+                                <!-- ico-logout : 비로그인 아이콘 -->
+                                <!-- ico-login : 로그인 아이콘 -->
+                                <i class="ico ico-login"></i> 
+                            </button>
+                            <button type="button" class="btnMore">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //user -->
+                    <!-- selectArea -->
+                    <div class="selectArea right">
+                        <select style="width: 100px;">
+                            <option label="선택" selected></option>
+                            <option label="선택 1"></option>
+                            <option label="선택 2"></option>
+                            <option label="선택 3"></option>
+                        </select>
+                        <select style="width: 100px;">
+                            <option label="선택" selected></option>
+                            <option label="선택 1"></option>
+                            <option label="선택 2"></option>
+                            <option label="선택 3"></option>
+                        </select>
+                    </div>
+                    <!-- //selectArea -->
+                </div>
+                <!-- //rightMenu -->
+            </div>
+            <!-- //tabCont -->
+
+            <!-- 인프라 관리 탭 -->
+            <!-- tabCont -->
+            <div class="tabCont pos-r">
+                <!-- gnb -->
+                <div class="gnb">
+                    <ul>
+                        <li class="active">
+                            <a href="#">자원 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">카탈로그 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">이벤트 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">사용자 맞춤형 포털</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //gnb -->
+                <!-- rightMenu -->
+                <div class="rightMenu">
+                    <!-- user -->
+                    <div class="user">
+                        <a href="#" title="사용자 포털 바로가기">사용자 포털 바로가기</a>
+                        <div class="info">
+                            <span>최고관리자 <strong>송은희</strong>님</span>
+                        </div>
+                        <div class="util">
+                            <button type="button">
+                                <i class="ico ico-search"></i>
+                            </button>
+                            <button type="button" class="btnLogout">
+                                <!-- ico-logout : 비로그인 아이콘 -->
+                                <!-- ico-login : 로그인 아이콘 -->
+                                <i class="ico ico-login"></i> 
+                            </button>
+                            <button type="button" class="btnMore">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //user -->
+                    <!-- selectArea -->
+                    <div class="selectArea right">
+                        <select style="width: 140px;">
+                            <option label="내부망" selected></option>
+                            <option label="선택 1"></option>
+                            <option label="선택 2"></option>
+                            <option label="선택 3"></option>
+                        </select>
+                        <select style="width: 140px;">
+                            <option label="선택" selected></option>
+                            <option label="선택 1"></option>
+                            <option label="선택 2"></option>
+                            <option label="선택 3"></option>
+                        </select>
+                        <select style="width: 180px;">
+                            <option label="그룹선택" selected></option>
+                            <option label="선택 1"></option>
+                            <option label="선택 2"></option>
+                            <option label="선택 3"></option>
+                        </select>
+                    </div>
+                    <!-- //selectArea -->
+                </div>
+                <!-- //rightMenu -->
+            </div>
+            <!-- //tabCont -->
+        </div>
+        <!-- //tabContWrap -->
+    </div>
+    <!-- //inner -->
+</header>
+        <!-- //header -->
+        <!-- lnb -->
+         <!-- lnb -->
+ <div id="lnb">
+    <div class="lnb">
+        <button type="button" class="btnPin">
+            <span class="hidden">lnb 고정</span>
+        </button>
+        <!-- lnbTop -->
+        <div class="lnbTop">
+            <div class="lnbTit">
+                <h1 class="tit">포털 관리</h1>
+            </div>
+            <!-- lnbMenu -->
+            <div class="lnbMenu">
+                <ul>
+                    <li>
+                        <div class="menuTit">
+                            <span>게시판관리</span>
+                        </div>
+                        <!-- dep2 -->
+                        <div class="dep2">
+                            <ul>
+                                <li>
+                                    <a href="#">공지사항 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">자료실 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">FQA 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">질의응답 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">사용자요청 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">사용자포럼 관리</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //dep2 -->
+                    </li>
+                    <li>
+                        <div class="menuTit">
+                            <span>콘텐츠관리</span>
+                        </div>
+                        <!-- dep2 -->
+                        <div class="dep2">
+                            <ul>
+                                <li>
+                                    <a href="#">공지사항 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">자료실 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">FQA 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">질의응답 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">사용자요청 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">사용자포럼 관리</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //dep2 -->
+                    </li>
+                    <li>
+                        <div class="menuTit">
+                            <span>코드관리</span>
+                        </div>
+                        <!-- dep2 -->
+                        <div class="dep2">
+                            <ul>
+                                <li>
+                                    <a href="#">공지사항 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">자료실 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">FQA 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">질의응답 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">사용자요청 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">사용자포럼 관리</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //dep2 -->
+                    </li>
+                    <li>
+                        <div class="dep1Menu">
+                            <div class="menuTit">
+                                <span>사용자계정 관리</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dep1Menu">
+                            <div class="menuTit">
+                                <span>사용자그룹 관리</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dep1Menu">
+                            <div class="menuTit">
+                                <span>사용자권한 관리</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- //lnbMenu -->
+            <!-- lnb 접었을 때 나오는 화살표 -->
+            <button type="button" class="btnHide">
+                <i class="ico ico-lnb-hide"></i>
+            </button>
+        </div>
+        <!-- //lnbTop -->
+        <!-- lnbBottom -->
+        <div class="lnbBottom">
+            <ul>
+                <li>
+                    <i class="ico ico-lnb-add"></i>
+                    <a href="#">추가설정</a>
+                </li>
+                <li>
+                    <i class="ico ico-dashBoard"></i>
+                    <a href="#">대시보드</a>
+                </li>
+                <li class="lnbMoveTop">
+                    <i class="ico ico-top"></i>
+                    <a href="#">맨위로 이동</a>
+                </li>
+            </ul>
+        </div>
+        <!-- //lnbBottom -->
+    </div>
+</div>
+        <!-- //lnb -->
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <!-- inner -->
+                <div class="inner">
+                    <!-- breadCrumb -->
+                    <div class="breadCrumb">
+                        <ul>
+                            <li>홈</li>
+                            <li>포털 관리</li>
+                            <li>게시판 관리</li>
+                            <li>공지사항 관리</li>
+                        </ul>
+                    </div>
+                    <!-- //breadCrumb -->
+                    <h2 class="tit">연계 데이터 관리</h2>
+                    <div class="rowContainer sb">
+                        <!-- lnbContainer -->
+                        <div class="lnbContainer">
+                            <!-- searchGroup -->
+                            <div class="searchGroup">
+                                <select style="width:147px; margin-right: 5px;">
+                                    <option label="분류체계"></option>
+                                </select>
+                                <input type="text" id="i01" style="width: 240px; margin-right: 5px;"/>
+                                <label for="i01"></label>
+                                <button type="button" class="btn bg-black">
+                                    <i class="ico ico-notice-search"></i>
+                                </button>
+                            </div>
+                            <!-- //searchGroup -->
+                            <!-- srchResult -->
+                            <div class="srchResult">
+                                <dl>
+                                    <dt class="hidden">searchResult</dt>
+                                    <dd class="keyword">&apos;건물&apos;</dd>
+                                    <dd>검색결과 <em class="blue">6</em>건</dd>
+                                </dl>
+                            </div>
+                            <!-- //srchResult -->
+                            <!-- treeCont -->
+                            <div class="treeCont">
+                                <div class="btnArea">
+                                    <button type="button" class="btn bg-blue full jcc">
+                                        <span>신규 등록</span>
+                                    </button>
+                                </div>
+                                <!-- treeArea -->
+                                <div class="treeArea cScroll">
+                                    트리영역<br>트리영역<br>트리영역<br>트리영역<br>
+                                    트리영역<br>트리영역<br>트리영역<br>트리영역<br>
+                                    트리영역<br>트리영역<br>트리영역<br>트리영역<br>
+                                    트리영역<br>트리영역<br>트리영역<br>트리영역<br>
+                                    트리영역<br>트리영역<br>트리영역<br>트리영역<br>
+                                    트리영역<br>트리영역<br>트리영역<br>트리영역<br>
+                                    트리영역<br>트리영역<br>트리영역<br>트리영역<br>
+                                </div>
+                                <!-- //treeArea -->
+                            </div>
+                            <!-- //treeCont -->
+                        </div>
+                        <!-- //lnbContainer -->
+
+                        <!-- tableArea -->
+                        <div class="tableArea type02">
+                            <!-- tabContWrap -->
+                            <div class="tabContWrap type04">
+                                <!-- tabNav -->
+                                <div class="tabNav flex ac sb">
+                                    <ul class="tabList">
+                                        <li class="active">상세정보</li>
+                                        <li>컬럼정보</li>
+                                        <li>메타데이터</li>
+                                        <li>전처리</li> 
+                                    </ul>
+                                    <div class="btnArea">
+                                        <button type="button" class="btn bg-white lg">
+                                            <span class="t-grey3">신규등록</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- //tabNav -->
+                                
+                                <!-- tabCont -->
+                                <div class="tabCont active">
+                                    <!-- contBox -->
+                                    <div class="contBox type03">
+                                        <!-- table -->
+                                        <div class="table effect">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:90px;">
+                                                    <col style="width:120px;">
+                                                    <col style="width: auto;">
+                                                    <col style="width: 180px;">
+                                                    <col style="width: 100px;">
+                                                    <col style="width: 120px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">순서</th>
+                                                        <th scope="col">구분</th>
+                                                        <th scope="col">함수명</th>
+                                                        <th scope="col">설명</th>
+                                                        <th scope="col">이동</th>
+                                                        <th scope="col">파라미터정보</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="txt-center">1</td>
+                                                        <td class="txt-center">칼럼관리</td>
+                                                        <td>Func1</td>
+                                                        <td class="txt-center">공간칼럼추가</td>
+                                                        <td>
+                                                            <div class="flex">
+                                                                <button type="button" class="btn bg-white p0 mr">
+                                                                    <i class="ico ico-up"></i>
+                                                                </button>
+                                                                <button type="button" class="btn bg-white p0">
+                                                                    <i class="ico ico-down"></i>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn bg-white p0 param">
+                                                                <i class="ico ico-btnSearch"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt-center">2</td>
+                                                        <td class="txt-center">공간처리</td>
+                                                        <td>Func2</td>
+                                                        <td class="txt-center">점좌표입력</td>
+                                                        <td>
+                                                            <div class="flex">
+                                                                <button type="button" class="btn bg-white p0 mr">
+                                                                    <i class="ico ico-up"></i>
+                                                                </button>
+                                                                <button type="button" class="btn bg-white p0">
+                                                                    <i class="ico ico-down"></i>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn bg-white p0">
+                                                                <i class="ico ico-btnSearch"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt-center">3</td>
+                                                        <td class="txt-center">공간처리</td>
+                                                        <td>fn_projection</td>
+                                                        <td class="txt-center">좌표계반환</td>
+                                                        <td>
+                                                            <div class="flex">
+                                                                <button type="button" class="btn bg-white p0 mr">
+                                                                    <i class="ico ico-up"></i>
+                                                                </button>
+                                                                <button type="button" class="btn bg-white p0">
+                                                                    <i class="ico ico-down"></i>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn bg-white p0">
+                                                                <i class="ico ico-btnSearch"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt-center">4</td>
+                                                        <td class="txt-center">가명처리</td>
+                                                        <td>Func4</td>
+                                                        <td class="txt-center">데이터범주화</td>
+                                                        <td>
+                                                            <div class="flex">
+                                                                <button type="button" class="btn bg-white p0 mr">
+                                                                    <i class="ico ico-up"></i>
+                                                                </button>
+                                                                <button type="button" class="btn bg-white p0">
+                                                                    <i class="ico ico-down"></i>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn bg-white p0">
+                                                                <i class="ico ico-btnSearch"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                        <div class="btnArea">
+                                            <button type="button" class="btn bd-orange bg-white2 lg rightAuto">
+                                                <span class="t-orange">워크플로우 보기</span>
+                                            </button>
+                                            <button type="button" class="btn bg-sky lg">함수추가</button>
+                                            <button type="button" class="btn bg-grey lg">선택삭제</button>
+                                        </div>
+                                    </div>
+                                    <!-- //contBox -->
+                                </div>
+                                <!-- //tabCont -->
+                            </div>
+                            <!-- //tabContWrap -->
+                        </div>
+                        <!-- //tableArea -->
+                    </div>
+                </div>
+                <!-- //inner -->
+                 <!-- footer -->
+                 <div id="footer">
+    <div class="inner">
+        <h1 class="logo left">
+            <img src="../images/common/footer-logo.png" class="va-m" alt="LX 국토정보플랫폼">
+        </h1>
+        <div class="desc">
+            <p class="address left">54870 전라북도 전주시 덕진구 기지로 120 (중동) 대표전화 : 063-713-1000 </p>
+            <p class="call">바로처리 콜센터 : 1588-7704</p>
+            <p class="copy">COPYRIGHT(C) LX,ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="familySite right">
+            <a href="#" title="FAMILY SITE">FAMILY SITE</a>
+            <ul>
+                <li>
+                    <a href="#">SITE1</a>
+                </li>
+                <li>
+                    <a href="#">SITE2</a>
+                </li>
+                <li>
+                    <a href="#">SITE3</a>
+                </li>
+                <li>
+                    <a href="#">SITE4</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+                 <!-- //footer -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+        <!-- popup -->
+        <div class="popup" style="display: none;">
+            <!-- popHead -->
+            <div class="popHead">
+                <p>파라미터 정보</p>
+                <button type="button" class="btnClose">
+                    <span class="hidden">팝업창 닫기</span>
+                </button>
+            </div>
+            <!-- //popHead -->
+            <!-- popCont -->
+            <div class="popCont">
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 120px;">
+                            <col style="width: 95px;">
+                            <col style="width: 95px;">
+                            <col style="width: 95px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">파라미터</th>
+                                <th scope="col">설명</th>
+                                <th scope="col">유형</th>
+                                <th scope="col">설명</th>
+                                <th scope="col">값</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="txt-center">schema_name</td>
+                                <td class="txt-center">스키마명</td>
+                                <td class="txt-center">텍스트</td>
+                                <td class="txt-center"></td>
+                                <td class="txt-center">
+                                    <div class="txtBox bg-white txt-left">jeonju</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">table_name</td>
+                                <td class="txt-center">테이블명</td>
+                                <td class="txt-center">테이블</td>
+                                <td class="txt-center"></td>
+                                <td class="txt-center">
+                                    <div class="txtBox txt-left">jeonju</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">geometry_column_name</td>
+                                <td class="txt-center">공간칼럼명</td>
+                                <td class="txt-center">칼럼</td>
+                                <td class="txt-center"></td>
+                                <td class="txt-center">
+                                    <select style="width: 100%;">
+                                        <option label="shape"></option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">geometry_type</td>
+                                <td class="txt-center">공간정보유형</td>
+                                <td class="txt-center">표준코드</td>
+                                <td class="txt-center">MC0004</td>
+                                <td class="txt-center">
+                                    <select style="width: 100%;">
+                                        <option label="point"></option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">from_srid</td>
+                                <td class="txt-center">원본좌표계</td>
+                                <td class="txt-center">숫자</td>
+                                <td class="txt-center">EPSG</td>
+                                <td class="txt-center">
+                                    <div class="txtBox txt-left bg-white">4326</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">to_srid</td>
+                                <td class="txt-center">대상좌표계</td>
+                                <td class="txt-center">숫자</td>
+                                <td class="txt-center">EPSG</td>
+                                <td class="txt-center">
+                                    <div class="txtBox txt-left bg-white">5179</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <div class="btnArea between">
+                    <button type="button" class="btn bg-grey lg">닫기</button>
+                    <button type="button" class="btn bg-blue lg">저장</button>
+                </div>
+            </div>
+            <!-- //popCont -->
+        </div>
+        <!-- //popup -->
+        <div id="dimmed" style="display: none;"></div>
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
